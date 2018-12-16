@@ -1,0 +1,19 @@
+{
+    "name": "vendor/exemplo-rotas",
+    "description": "Descrição do projeto Exemplo-Rotas.",
+    "authors": [
+        {
+            "name": "Eliezer",
+            "email": "eliezer@email.here"
+        }
+    ],
+    "require": {},
+    "autoload":{
+        "psr-4":{
+            "App\\":"App/",
+            "Classes\\":"Classes/",
+            "Traits\\":"Traits/",
+            "Config\\":"Config/"
+        }
+    }
+}

@@ -1,0 +1,21 @@
+#https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html
+
+#Habilitar rescrever Url. fonte:https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html#rewriteengine
+RewriteEngine On
+
+#*************************CONDIÇÃO********************************************
+#https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html#rewritecond
+
+#Condição:Se ARQUIVO existir ele é exibido caso contrário executa o Rule ou seja index.php 
+RewriteCond %{REQUEST_FILENAME} !-f  
+
+#Condição:Se o DIRECTORE existir ele é exibido caso contrário executa o Rule ou seja index.php 
+#RewriteCond %{REQUEST_FILENAME} !-d 
+
+#Redireciona caso as condições acima não exista.
+RewriteRule ^(.*)$ public_html/index.php?digitado=$1 [NC,QSA,L] 
+
+#Indice  ----fonte:https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html#rewriterule
+#NC : Torna a comparação de padrões insensível a maiúsculas e minúsculas
+#QSA :	(Tudo que for digitado na ULR será encaminhado)Anexa qualquer sequência de consulta do URL de solicitação original a qualquer sequência de consulta criada no destino de reconfiguração
+#L : (Para execução das Condiçoes tipo END.)Pare o processo de reescrita imediatamente e não aplique mais nenhuma regra. Especialmente note advertências para o contexto por diretório e .htaccess (veja também o flag END)
