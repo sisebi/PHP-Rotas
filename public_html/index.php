@@ -25,7 +25,7 @@
                 <div class="dropdown-menu">
                     <a class="dropdown-item" href="<?= _CAMINHO_FILE_ ?>astah.rar">Astah</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Plugin PHP</a>
+                    <a class="dropdown-item" href="<?= _CAMINHO_FILE_ ?>Pacotes_Wamp.zip">Pacotes WampServer</a>
                 </div>
             </li>    
         </nav>
