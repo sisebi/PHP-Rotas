@@ -13,7 +13,8 @@
             "App\\":"App/",
             "Classes\\":"Classes/",
             "Traits\\":"Traits/",
-            "Config\\":"Config/"
+            "Config\\":"Config/",
+            "File\\":"File/"
         }
     }
 }

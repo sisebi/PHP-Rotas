@@ -11,6 +11,10 @@ class ComposerStaticInitf5ae28c00b3d509375c2c77468205b28
         array (
             'Traits\\' => 7,
         ),
+        'F' => 
+        array (
+            'File\\' => 5,
+        ),
         'C' => 
         array (
             'Config\\' => 7,
@@ -26,6 +30,10 @@ class ComposerStaticInitf5ae28c00b3d509375c2c77468205b28
         'Traits\\' => 
         array (
             0 => __DIR__ . '/../..' . '/Traits',
+        ),
+        'File\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/File',
         ),
         'Config\\' => 
         array (

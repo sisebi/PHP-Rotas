@@ -1,8 +1,8 @@
 <!doctype html>
 <html lang="pt-BR">
     <?php
-            require_once '../vendor/autoload.php';
-            require_once '../Config/Configurar.php'; 
+    require_once '../vendor/autoload.php';
+    require_once '../Config/Configurar.php';
     ?>
     <head>
         <!-- Required meta tags -->
@@ -20,6 +20,14 @@
             <a class="nav-link" href="Login">Login</a>
             <a class="nav-link" href="Cadastrar">Cadastrar</a>
             <a class="nav-link" href="404">Erro</a>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dowload</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="<?= _CAMINHO_FILE_ ?>astah.rar">Astah</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Plugin PHP</a>
+                </div>
+            </li>    
         </nav>
     </header>
     <body>
